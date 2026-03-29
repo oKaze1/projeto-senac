@@ -445,7 +445,7 @@ a {
 }
 
 .gallery-card {
-    min-height: 180px;
+    min-height: 220px;
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(94, 125, 255, 0.14), rgba(255, 255, 255, 0.9));
     border: 1px solid rgba(94, 123, 255, 0.12);
@@ -454,6 +454,26 @@ a {
     color: #0f172a;
     font-weight: 700;
     box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.gallery-video {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.gallery-video video {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 24px;
+    object-fit: cover;
 }
 
 .detail-grid {
@@ -524,8 +544,12 @@ a {
 }
 
 .video-section video {
+    width: 100%;
+    max-width: 720px;
+    max-height: 420px;
     border-radius: 28px;
     box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+    object-fit: cover;
 }
 
 @keyframes fadeInUp {
