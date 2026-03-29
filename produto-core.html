@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SleepX Core - cápsula de sono inteligente para monitoramento biométrico e clima adaptativo.">
+    <title>SleepX Core | Detalhes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="pagina01.html">SleepX</a>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="pagina01.html">Home</a>
+            <a href="produto-core.html">Produto</a>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="videos/video-sleepx.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em background.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero">
+            <span class="hero-badge">SleepX Core</span>
+            <p class="hero-tagline">Cápsula inteligente essencial para um sono restaurador.</p>
+            <h1>Conforto inteligente com controle biométrico e clima adaptativo</h1>
+            <p>O SleepX Core combina sensores de última geração com ajustes automáticos de temperatura, iluminação e ruído para criar um ambiente perfeito de sono.</p>
+            <div class="hero-actions">
+                <a href="pagina01.html" class="cta-button">Voltar ao início</a>
+                <a href="produto-core.html" class="secondary-button">Ver produto</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="produtos">
+        <section class="produtos-intro">
+            <h2>O básico que já é revolucionário</h2>
+            <p>Projetado para quem busca uma experiência de descanso premium com tecnologia acessível e resultados reais desde a primeira noite.</p>
+        </section>
+
+        <section class="detail-grid">
+            <article class="detail-panel">
+                <h3>Recursos principais</h3>
+                <ul>
+                    <li>Monitoramento cardíaco contínuo</li>
+                    <li>Ajuste ambiental automático</li>
+                    <li>Ciclos de sono personalizados</li>
+                    <li>Relatório diário de recuperação</li>
+                </ul>
+            </article>
+            <article class="detail-panel gallery-panel">
+                <h3>Galeria</h3>
+                <div class="gallery-grid">
+                    <img src="imagens/capsula.jpeg" alt="Capsula SleepX" class="gallery-img" />
+                    <img src="imagens/capsula01.jpeg" alt="Detalhe Capsula SleepX" class="gallery-img" />
+                </div>
+                <p>Substitua estas imagens pelos seus materiais de produto para mostrar o design e a tecnologia interna.</p>
+            </article>
+        </section>
+
+        <section class="video-section">
+            <h2>Vídeos e demonstrações</h2>
+            <p>Assista ao vídeo oficial do SleepX e veja como a cápsula cria uma jornada de sono única.</p>
+            <video controls width="100%" poster="videos/video-sleepx.mp4">
+                <source src="videos/video-sleepx.mp4" type="video/mp4">
+                Seu navegador não suporta reprodução de vídeo.
+            </video>
+        </section>
+    </main>
+    <script>
+        const hero = document.querySelector('.hero');
+        const bgVideo = document.getElementById('bg-video');
+        window.addEventListener('scroll', () => {
+            const offset = window.scrollY;
+            hero.style.transform = `translateY(${offset * 0.05}px)`;
+            bgVideo.style.transform = `translateY(${offset * 0.02}px)`;
+        });
+    </script>
+</body>
+</html>

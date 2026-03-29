@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SleepX - cápsula inteligente de sono para otimizar recuperação e preparar o corpo para o dia seguinte.">
+    <title>SleepX | Cápsula inteligente do sono</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="pagina01.html">SleepX</a>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="pagina01.html">Home</a>
+            <a href="produto-core.html">Produto</a>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="videos/video-sleepx.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em background.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero">
+            <span class="hero-badge">Lançamento</span>
+            <p class="hero-tagline">Cápsula inteligente para sono regenerador</p>
+            <h1>Sono otimizado com tecnologia de última geração</h1>
+            <p>SleepX utiliza sensores avançados, controle personalizado e ambientes modulados para transformar seu descanso em recuperação máxima e preparação completa para o dia seguinte.</p>
+            <div class="hero-actions">
+                <a href="#produtos" class="cta-button">Saiba como funciona</a>
+                <a href="produto-core.html" class="secondary-button">Ver produto</a>
+            </div>
+            <p class="hero-notes">Animações suaves, navegação fluida e um layout totalmente responsivo para encantar o usuário.</p>
+        </div>
+    </div>
+
+    <main class="produtos" id="produtos">
+        <section class="produtos-intro">
+            <h2>O novo padrão de sono inteligente</h2>
+            <p>SleepX é a cápsula de última geração desenvolvida para otimizar, controlar e potencializar o descanso humano com tecnologia avançada.</p>
+        </section>
+
+        <section class="feature-grid">
+            <article class="feature-card">
+                <span>01</span>
+                <h3>Descanso personalizado</h3>
+                <p>Ajustes inteligentes de temperatura, luz e som com base no seu perfil de sono.</p>
+            </article>
+            <article class="feature-card">
+                <span>02</span>
+                <h3>Recuperação máxima</h3>
+                <p>Biometria contínua e relatórios visuais mostram a eficiência do seu descanso.</p>
+            </article>
+            <article class="feature-card">
+                <span>03</span>
+                <h3>Design imersivo</h3>
+                <p>Experiência de uso sofisticada, com efeitos visuais e menu suave para o usuário.</p>
+            </article>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <div class="card-icon">01</div>
+                <img src="imagens/capsula.jpeg" alt="SleepX Cápsula Inteligente">
+                <h3>SleepX Cápsula Inteligente</h3>
+                <p>A cápsula de sono criada para recuperar, ajustar e preparar seu corpo com tecnologia avançada e ambiente completo.</p>
+                <span>R$ 25.000,00</span>
+                <a href="produto-core.html" class="card-link">Ver detalhes</a>
+            </article>
+        </section>
+
+        <section class="experience">
+            <div>
+                <h3>Interação que encanta</h3>
+                <p>O site agora ganha movimentos suaves, cartões animados e uma experiência de leitura que mantém o visitante engajado.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card">Imagem 1</div>
+                <div class="gallery-card">Vídeo 1</div>
+                <div class="gallery-card">Imagem 2</div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const hero = document.querySelector('.hero');
+        const bgVideo = document.getElementById('bg-video');
+        window.addEventListener('scroll', () => {
+            const offset = window.scrollY;
+            document.documentElement.style.setProperty('--scroll', offset);
+            hero.style.transform = `translateY(${offset * 0.05}px)`;
+            bgVideo.style.transform = `translateY(${offset * 0.02}px)`;
+        });
+    </script>
+</body>
+</html>
