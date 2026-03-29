@@ -12,96 +12,276 @@
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="pagina01.html">SleepX</a>
+        <a class="brand" href="index.html">SleepX</a>
         <nav class="main-nav" aria-label="Menu principal">
-            <a href="pagina01.html">Home</a>
-            <a href="produto-core.html">Produto</a>
+            <a href="index.html">Home</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#produto">Produto</a>
+            <a href="#midias">Mídia</a>
+            <a href="#how-it-works">Como funciona</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <div class="video-container">
-        <video id="bg-video" autoplay muted loop playsinline>
-            <source src="videos/video-sleepx.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo em background.
-        </video>
-        <div class="overlay"></div>
-        <div class="hero">
-            <span class="hero-badge">Lançamento</span>
-            <p class="hero-tagline">Cápsula inteligente para sono regenerador</p>
-            <h1>Sono otimizado com tecnologia de última geração</h1>
-            <p>SleepX utiliza sensores avançados, controle personalizado e ambientes modulados para transformar seu descanso em recuperação máxima e preparação completa para o dia seguinte.</p>
-            <div class="hero-actions">
-                <a href="#produtos" class="cta-button">Saiba como funciona</a>
-                <a href="produto-core.html" class="secondary-button">Ver produto</a>
-            </div>
-            <p class="hero-notes">Animações suaves, navegação fluida e um layout totalmente responsivo para encantar o usuário.</p>
+    <section class="hero-section reveal">
+        <div class="video-container">
+            <video id="bg-video" autoplay muted loop playsinline>
+                <source src="videos/video-sleepx.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo em background.
+            </video>
+            <div class="overlay"></div>
         </div>
-    </div>
 
-    <main class="produtos" id="produtos">
-        <section class="produtos-intro">
-            <h2>O novo padrão de sono inteligente</h2>
-            <p>SleepX é a cápsula de última geração desenvolvida para otimizar, controlar e potencializar o descanso humano com tecnologia avançada.</p>
-        </section>
-
-        <section class="feature-grid">
-            <article class="feature-card">
-                <span>01</span>
-                <h3>Descanso personalizado</h3>
-                <p>Ajustes inteligentes de temperatura, luz e som com base no seu perfil de sono.</p>
-            </article>
-            <article class="feature-card">
-                <span>02</span>
-                <h3>Recuperação máxima</h3>
-                <p>Biometria contínua e relatórios visuais mostram a eficiência do seu descanso.</p>
-            </article>
-            <article class="feature-card">
-                <span>03</span>
-                <h3>Design imersivo</h3>
-                <p>Experiência de uso sofisticada, com efeitos visuais e menu suave para o usuário.</p>
-            </article>
-        </section>
-
-        <section class="cards">
-            <article class="card">
-                <div class="card-icon">01</div>
-                <img src="imagens/capsula.jpeg" alt="SleepX Cápsula Inteligente">
-                <h3>SleepX Cápsula Inteligente</h3>
-                <p>A cápsula de sono criada para recuperar, ajustar e preparar seu corpo com tecnologia avançada e ambiente completo.</p>
-                <span>R$ 25.000,00</span>
-                <a href="produto-core.html" class="card-link">Ver detalhes</a>
-            </article>
-        </section>
-
-        <section class="experience">
-            <div>
-                <h3>Interação que encanta</h3>
-                <p>O site agora ganha movimentos suaves, cartões animados e uma experiência de leitura que mantém o visitante engajado.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-card">
-                    <img src="imagens/capsula.jpeg" alt="Capsula SleepX" />
+        <div class="hero-content">
+            <div class="hero-copy">
+                <span class="hero-pill">Cápsula inteligente</span>
+                <h1>SleepX transforma o seu descanso em recuperação de alta performance.</h1>
+                <p>Uma experiência de sono premium com controle ambiental, monitoramento biométrico e preparação inteligente para o dia seguinte.</p>
+                <div class="hero-actions">
+                    <a href="#produto" class="cta-button">Conhecer SleepX</a>
+                    <a href="#midias" class="secondary-button">Ver demonstração</a>
                 </div>
-                <div class="gallery-card gallery-video">
+            </div>
+
+            <div class="hero-metrics">
+                <div class="metric-card">
+                    <strong>98%</strong>
+                    <span>Qualidade de recuperação</span>
+                </div>
+                <div class="metric-card">
+                    <strong>4,9/5</strong>
+                    <span>Índice médio de satisfação</span>
+                </div>
+                <div class="metric-card">
+                    <strong>1 toque</strong>
+                    <span>Modo automático de sono</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="highlights reveal" id="beneficios">
+            <div class="section-heading">
+                <p>Por que SleepX</p>
+                <h2>Recuperação acelerada, sono profundo e tecnologia intuitiva.</h2>
+            </div>
+            <div class="highlight-grid">
+                <article class="highlight-card">
+                    <h3>Clima perfeito</h3>
+                    <p>Temperatura, iluminação e ruído adaptam-se ao seu ciclo para uma noite natural e revitalizante.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>Dados reais</h3>
+                    <p>Sensores monitoram batimentos, respiração e movimento para entregar recomendações precisas.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>Despertar inteligente</h3>
+                    <p>O sistema escolhe o momento ideal para acordar e minimizar a sensação de cansaço.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="features reveal">
+            <div class="section-heading">
+                <p>Recursos</p>
+                <h2>Recursos projetados para sono profundo e recuperação verdadeira.</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Ambiente autônomo</h3>
+                    <p>Temperatura, iluminação e acústica se ajustam automaticamente ao seu ciclo.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Relatório inteligente</h3>
+                    <p>Receba dados claros e recomendações para ter noites cada vez melhores.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Uso simplificado</h3>
+                    <p>Controle intuitivo com apenas um toque, sem configurações complicadas.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Design premium</h3>
+                    <p>Acabamento elegante, interior acolhedor e operação quase silenciosa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="produto reveal" id="produto">
+            <div class="produto-grid">
+                <div class="produto-image">
+                    <img src="imagens/capsula.jpeg" alt="Cápsula SleepX">
+                </div>
+                <div class="produto-copy">
+                    <span class="section-label">Produto único</span>
+                    <h2>SleepX — a cápsula inteligente de sono para quem busca alto desempenho.</h2>
+                    <p>Design minimalista, tecnologia de ponta e um interior preparado para restaurar corpo e mente enquanto você descansa.</p>
+                    <ul class="feature-list">
+                        <li>Ambiente controlado e silencioso</li>
+                        <li>Monitoramento biométrico avançado</li>
+                        <li>Rotinas de sono personalizadas</li>
+                        <li>Experiência intuitiva e segura</li>
+                    </ul>
+                    <a href="produto-core.html" class="card-link">Explorar o produto</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing reveal" id="orcamento">
+            <div class="section-heading">
+                <p>Orçamento</p>
+                <h2>SleepX Core com preço sob medida para seu ambiente.</h2>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card recommended">
+                    <span class="pricing-label">SleepX Core</span>
+                    <strong>Preço personalizado</strong>
+                    <p>Orçamento criado especialmente para o seu projeto, com entrega e instalação sob medida.</p>
+                    <ul>
+                        <li>Proposta adaptada ao seu espaço</li>
+                        <li>Instalação e suporte técnicos</li>
+                        <li>Atendimento direto pelo WhatsApp</li>
+                    </ul>
+                    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" class="card-link">Pedir orçamento</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-panel reveal" id="contato">
+            <div class="cta-copy">
+                <span class="section-label">Pronto para dormir diferente?</span>
+                <h2>Receba uma proposta personalizada e transforme sua noite.</h2>
+            </div>
+            <div class="cta-actions">
+                <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" class="cta-button">Solicitar orçamento</a>
+                <a href="#midias" class="secondary-button">Ver demonstração</a>
+            </div>
+        </section>
+
+        <section class="midias reveal" id="midias">
+            <div class="section-heading">
+                <p>Mídia</p>
+                <h2>Veja SleepX em ação e entenda a experiência.</h2>
+            </div>
+            <div class="midia-grid">
+                <div class="media-card">
+                    <img src="imagens/capsula.jpeg" alt="Capsula SleepX">
+                </div>
+                <div class="media-card media-video">
                     <video controls playsinline>
                         <source src="videos/video-sleepx.mp4" type="video/mp4">
                         Seu navegador não suporta reprodução de vídeo.
                     </video>
                 </div>
-                <div class="gallery-card">
-                    <img src="imagens/capsula01.jpeg" alt="Detalhe Capsula SleepX" />
+                <div class="media-card">
+                    <img src="imagens/capsula01.jpeg" alt="Detalhe da cápsula SleepX">
                 </div>
             </div>
         </section>
+
+        <section class="how-it-works reveal" id="how-it-works">
+            <div class="section-heading">
+                <p>Como funciona</p>
+                <h2>Três passos para um descanso totalmente renovador.</h2>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span>1</span>
+                    <h3>Preparação personalizada</h3>
+                    <p>A cápsula ajusta iluminação, temperatura e som com base no seu perfil de sono.</p>
+                </article>
+                <article class="step-card">
+                    <span>2</span>
+                    <h3>Controle inteligente</h3>
+                    <p>Sensores acompanham seu sono e equilibram cada fase para garantir maior profundidade e estabilidade.</p>
+                </article>
+                <article class="step-card">
+                    <span>3</span>
+                    <h3>Recuperação acelerada</h3>
+                    <p>Ao despertar, você recebe uma rotina leve e inteligente para começar o dia com clareza e disposição.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq reveal" id="faq">
+            <div class="section-heading">
+                <p>FAQ</p>
+                <h2>Dúvidas respondidas para você decidir.</h2>
+            </div>
+            <div class="faq-grid">
+                <article class="faq-card">
+                    <h3>Quanto tempo leva para configurar a cápsula?</h3>
+                    <p>A cápsula identifica seu perfil e ajusta o ambiente automaticamente em poucos minutos.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>Preciso de suporte técnico diário?</h3>
+                    <p>Não. SleepX usa automações e ajustes inteligentes que funcionam de forma autônoma após a configuração inicial.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>Posso usar em qualquer ambiente?</h3>
+                    <p>Sim. A cápsula opera em espaços fechados e se adapta para oferecer as melhores condições de sono.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials reveal">
+            <div class="section-heading">
+                <p>Depoimentos</p>
+                <h2>Usuários que agora dormem melhor todos os dias.</h2>
+            </div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <p>“SleepX mudou minha rotina de sono. Acordo mais descansado e pronto para encarar o dia sem esforço.”</p>
+                    <strong>— Lucas M.</strong>
+                </article>
+                <article class="testimonial-card">
+                    <p>“O design é elegante, e o ambiente interno me dá tranquilidade. É a melhor experiência de descanso que já tive.”</p>
+                    <strong>— Marina S.</strong>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>SleepX</strong>
+            <p>Cápsula inteligente de sono — recuperação avançada para o seu dia a dia.</p>
+            <p class="contact-note">Entre em contato: <a href="https://wa.me/5577999036794" target="_blank">+55 77 99903-6794</a></p>
+        </div>
+        <div class="footer-links">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#produto">Produto</a>
+            <a href="#midias">Mídia</a>
+            <a href="#how-it-works">Como funciona</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </footer>
+
     <script>
-        const hero = document.querySelector('.hero');
+        const heroSection = document.querySelector('.hero-section');
         const bgVideo = document.getElementById('bg-video');
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.18 });
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+
         window.addEventListener('scroll', () => {
             const offset = window.scrollY;
-            document.documentElement.style.setProperty('--scroll', offset);
-            hero.style.transform = `translateY(${offset * 0.05}px)`;
-            bgVideo.style.transform = `translateY(${offset * 0.02}px)`;
+            if (heroSection) {
+                heroSection.style.transform = `translateY(${offset * 0.025}px)`;
+            }
+            if (bgVideo) {
+                bgVideo.style.transform = `translateY(${offset * 0.015}px)`;
+            }
         });
     </script>
 </body>
