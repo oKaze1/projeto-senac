@@ -13,6 +13,11 @@
 <body>
     <header class="site-header">
         <a class="brand" href="index.html">SleepX</a>
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html">Home</a>
             <a href="index.html">Voltar</a>
@@ -22,7 +27,7 @@
     <section class="product-hero reveal">
         <div class="video-container">
             <video id="bg-video" autoplay muted loop playsinline>
-                <source src="videos/video-sleepx.mp4" type="video/mp4">
+                <source src="videos/midia01.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo em background.
             </video>
             <div class="overlay"></div>
@@ -90,8 +95,8 @@
         <section class="video-section reveal">
             <h2>Veja a experiência ao vivo</h2>
             <p>Assista à demonstração oficial do SleepX e entenda como a cápsula cria uma jornada de sono única.</p>
-            <video controls poster="videos/video-sleepx.mp4">
-                <source src="videos/video-sleepx.mp4" type="video/mp4">
+            <video controls poster="videos/midia01.mp4">
+                <source src="videos/midia01.mp4" type="video/mp4">
                 Seu navegador não suporta reprodução de vídeo.
             </video>
         </section>
@@ -136,7 +141,7 @@
         <div>
             <strong>SleepX Core</strong>
             <p>Cápsula inteligente para sono mais profundo e recuperação mais rápida.</p>
-            <p class="contact-note">Entre em contato: <a href="mailto:contato@sleepx.com">contato@sleepx.com</a></p>
+            <p class="contact-note">Entre em contato: <a href="https://wa.me/5577999036794" target="_blank">+55 77 99903-6794</a></p>
         </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
@@ -144,10 +149,15 @@
         </div>
     </footer>
 
+    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core." target="_blank" class="whatsapp-float">Orçamento no WhatsApp</a>
+
     <script>
         const hero = document.querySelector('.hero');
         const bgVideo = document.getElementById('bg-video');
         const revealElements = document.querySelectorAll('.reveal');
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        const navLinks = document.querySelectorAll('.main-nav a');
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -159,6 +169,22 @@
         }, { threshold: 0.18 });
 
         revealElements.forEach((element) => revealObserver.observe(element));
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = mainNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (mainNav.classList.contains('open')) {
+                        mainNav.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
 
         window.addEventListener('scroll', () => {
             const offset = window.scrollY;

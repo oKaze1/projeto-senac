@@ -13,7 +13,12 @@
 <body>
     <header class="site-header">
         <a class="brand" href="index.html">SleepX</a>
-        <nav class="main-nav" aria-label="Menu principal">
+        <button class="mobile-menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Menu principal">
             <a href="index.html">Home</a>
             <a href="#beneficios">Benefícios</a>
             <a href="#produto">Produto</a>
@@ -23,11 +28,12 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
+    <div class="nav-overlay"></div>
 
     <section class="hero-section reveal">
         <div class="video-container">
-            <video id="bg-video" autoplay muted loop playsinline>
-                <source src="videos/video-sleepx.mp4" type="video/mp4">
+            <video id="bg-video" autoplay muted loop playsinline preload="metadata" poster="imagens/capsula.jpeg">
+                <source src="videos/midia01.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo em background.
             </video>
             <div class="overlay"></div>
@@ -38,23 +44,24 @@
                 <span class="hero-pill">Cápsula inteligente</span>
                 <h1>SleepX transforma o seu descanso em recuperação de alta performance.</h1>
                 <p>Uma experiência de sono premium com controle ambiental, monitoramento biométrico e preparação inteligente para o dia seguinte.</p>
+                <p class="hero-price">A partir de <strong>R$ 50.000,00</strong> com orçamento personalizado e instalação sob medida.</p>
                 <div class="hero-actions">
-                    <a href="#produto" class="cta-button">Conhecer SleepX</a>
+                    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core." target="_blank" rel="noopener noreferrer" class="cta-button">Pedir orçamento</a>
                     <a href="#midias" class="secondary-button">Ver demonstração</a>
                 </div>
             </div>
 
             <div class="hero-metrics">
                 <div class="metric-card">
-                    <strong>98%</strong>
+                    <strong data-target="98">0</strong>
                     <span>Qualidade de recuperação</span>
                 </div>
                 <div class="metric-card">
-                    <strong>4,9/5</strong>
+                    <strong data-target="4.9">0.0</strong>
                     <span>Índice médio de satisfação</span>
                 </div>
                 <div class="metric-card">
-                    <strong>1 toque</strong>
+                    <strong data-target="1">0</strong>
                     <span>Modo automático de sono</span>
                 </div>
             </div>
@@ -111,7 +118,7 @@
         <section class="produto reveal" id="produto">
             <div class="produto-grid">
                 <div class="produto-image">
-                    <img src="imagens/capsula.jpeg" alt="Cápsula SleepX">
+                    <img src="imagens/capsula.jpeg" alt="Cápsula SleepX" loading="lazy">
                 </div>
                 <div class="produto-copy">
                     <span class="section-label">Produto único</span>
@@ -131,19 +138,19 @@
         <section class="pricing reveal" id="orcamento">
             <div class="section-heading">
                 <p>Orçamento</p>
-                <h2>SleepX Core com preço sob medida para seu ambiente.</h2>
+                <h2>Soluções personalizadas com atendimento direto pelo WhatsApp.</h2>
             </div>
             <div class="pricing-grid">
                 <article class="pricing-card recommended">
                     <span class="pricing-label">SleepX Core</span>
-                    <strong>Preço personalizado</strong>
-                    <p>Orçamento criado especialmente para o seu projeto, com entrega e instalação sob medida.</p>
+                    <strong>R$ 50.000,00</strong>
+                    <p>Valor base para o modelo SleepX Core. Receba uma proposta personalizada com entrega e instalação completas.</p>
                     <ul>
                         <li>Proposta adaptada ao seu espaço</li>
                         <li>Instalação e suporte técnicos</li>
                         <li>Atendimento direto pelo WhatsApp</li>
                     </ul>
-                    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" class="card-link">Pedir orçamento</a>
+                    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" rel="noopener noreferrer" class="card-link">Pedir orçamento</a>
                 </article>
             </div>
         </section>
@@ -151,10 +158,10 @@
         <section class="cta-panel reveal" id="contato">
             <div class="cta-copy">
                 <span class="section-label">Pronto para dormir diferente?</span>
-                <h2>Receba uma proposta personalizada e transforme sua noite.</h2>
+                <h2>Fale agora no WhatsApp e receba uma proposta personalizada.</h2>
             </div>
             <div class="cta-actions">
-                <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" class="cta-button">Solicitar orçamento</a>
+                <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core.%20Por%20favor,%20me%20envie%20mais%20detalhes." target="_blank" rel="noopener noreferrer" class="cta-button">Solicitar orçamento</a>
                 <a href="#midias" class="secondary-button">Ver demonstração</a>
             </div>
         </section>
@@ -166,16 +173,16 @@
             </div>
             <div class="midia-grid">
                 <div class="media-card">
-                    <img src="imagens/capsula.jpeg" alt="Capsula SleepX">
+                    <img src="imagens/capsula.jpeg" alt="Capsula SleepX" loading="lazy">
                 </div>
                 <div class="media-card media-video">
-                    <video controls playsinline>
-                        <source src="videos/video-sleepx.mp4" type="video/mp4">
+                    <video controls playsinline poster="imagens/capsula01.jpeg">
+                        <source src="videos/midia01.mp4" type="video/mp4">
                         Seu navegador não suporta reprodução de vídeo.
                     </video>
                 </div>
                 <div class="media-card">
-                    <img src="imagens/capsula01.jpeg" alt="Detalhe da cápsula SleepX">
+                    <img src="imagens/capsula01.jpeg" alt="Detalhe da cápsula SleepX" loading="lazy">
                 </div>
             </div>
         </section>
@@ -247,7 +254,7 @@
         <div>
             <strong>SleepX</strong>
             <p>Cápsula inteligente de sono — recuperação avançada para o seu dia a dia.</p>
-            <p class="contact-note">Entre em contato: <a href="https://wa.me/5577999036794" target="_blank">+55 77 99903-6794</a></p>
+            <p class="contact-note">Entre em contato: <a href="https://wa.me/5577999036794" target="_blank" rel="noopener noreferrer">+55 77 99903-6794</a></p>
         </div>
         <div class="footer-links">
             <a href="#beneficios">Benefícios</a>
@@ -258,31 +265,8 @@
         </div>
     </footer>
 
-    <script>
-        const heroSection = document.querySelector('.hero-section');
-        const bgVideo = document.getElementById('bg-video');
-        const revealElements = document.querySelectorAll('.reveal');
+    <a href="https://wa.me/5577999036794?text=Olá%20SleepX,%20quero%20um%20orçamento%20para%20o%20produto%20SleepX%20Core." target="_blank" rel="noopener noreferrer" aria-label="Contato pelo WhatsApp" class="whatsapp-float">Orçamento no WhatsApp</a>
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.18 });
-
-        revealElements.forEach((element) => revealObserver.observe(element));
-
-        window.addEventListener('scroll', () => {
-            const offset = window.scrollY;
-            if (heroSection) {
-                heroSection.style.transform = `translateY(${offset * 0.025}px)`;
-            }
-            if (bgVideo) {
-                bgVideo.style.transform = `translateY(${offset * 0.015}px)`;
-            }
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
